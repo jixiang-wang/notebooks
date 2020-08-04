@@ -1,2 +1,2 @@
 # notebooks
-存储nob
+存储notebooks的笔记
