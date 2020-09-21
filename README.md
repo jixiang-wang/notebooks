@@ -47,7 +47,7 @@ pip-compile
 ```
 
 
-一般从安装依赖的命令：
+一般从requirements.txt安装依赖的命令：
 
 ```
 pip -sync
