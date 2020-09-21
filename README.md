@@ -50,6 +50,8 @@ pip-compile
 一般从安装依赖的命令：
 
 ```
+pip -sync
+# 或
 pip install -r requirements.txt
 ```
 
