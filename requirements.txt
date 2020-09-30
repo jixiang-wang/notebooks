@@ -4,171 +4,86 @@
 #
 #    pip-compile
 #
-alembic==1.4.1            # via mlflow
 argon2-cffi==20.1.0       # via notebook
 async-generator==1.10     # via nbclient
-attrs==20.2.0             # via jsonschema, pandas-profiling, pytest, visions
-azure-core==1.8.1         # via azure-storage-blob
-azure-storage-blob==12.5.0  # via mlflow
+attrs==20.2.0             # via jsonschema
 backcall==0.2.0           # via ipython
 bleach==3.2.1             # via nbconvert
-blis==0.4.1               # via spacy, thinc
-boto3==1.15.1             # via smart-open
-boto==2.49.0              # via smart-open
-botocore==1.18.1          # via boto3, s3transfer
-catalogue==1.0.0          # via spacy, thinc
-catboost==0.24            # via -r requirements.in, pycaret
-certifi==2020.6.20        # via msrest, requests
-cffi==1.14.3              # via argon2-cffi, cryptography
-chardet==3.0.4            # via requests
-click==7.1.2              # via databricks-cli, flask, mlflow, nltk
-cloudpickle==1.6.0        # via mlflow
-colorlover==0.3.0         # via cufflinks
-combo==0.1.1              # via pyod
-confuse==1.3.0            # via pandas-profiling
-cryptography==3.1         # via azure-storage-blob
-cufflinks==0.17.3         # via pycaret
-cycler==0.10.0            # via matplotlib, yellowbrick
-cymem==2.0.3              # via preshed, spacy, thinc
-databricks-cli==0.11.0    # via mlflow
-datefinder==0.7.1         # via pycaret
+catboost==0.24            # via -r requirements.in
+category-encoders==2.2.2  # via -r requirements.in
+cffi==1.14.3              # via argon2-cffi
+cloudpickle==1.6.0        # via hyperopt
+colorama==0.4.3           # via -r requirements.in
+cycler==0.10.0            # via matplotlib
 decorator==4.4.2          # via ipython, networkx
 defusedxml==0.6.0         # via nbconvert
-docker==4.3.1             # via mlflow
-entrypoints==0.3          # via mlflow, nbconvert
-flask==1.1.2              # via mlflow, prometheus-flask-exporter
-funcy==1.14               # via pyldavis
-future==0.18.2            # via pyldavis
-gensim==3.8.3             # via pycaret
-gitdb==4.0.5              # via gitpython
-gitpython==3.1.8          # via mlflow
-gorilla==0.3.0            # via mlflow
+entrypoints==0.3          # via nbconvert
+future==0.18.2            # via hyperopt
 graphviz==0.14.1          # via catboost
-gunicorn==20.0.4          # via mlflow
-htmlmin==0.1.12           # via pandas-profiling
-idna==2.10                # via requests
-imagehash==4.1.0          # via visions
-imbalanced-learn==0.7.0   # via pycaret
-importlib-metadata==1.7.0  # via catalogue, jsonschema, pluggy, pytest
-iniconfig==1.0.1          # via pytest
+hyperopt==0.2.4           # via -r requirements.in
+importlib-metadata==2.0.0  # via jsonschema
 ipykernel==5.3.4          # via ipywidgets, notebook
 ipython-genutils==0.2.0   # via nbformat, notebook, traitlets
-ipython==7.18.1           # via cufflinks, ipykernel, ipywidgets, pycaret
-ipywidgets==7.5.1         # via cufflinks, pandas-profiling, pycaret, qgrid
-isodate==0.6.0            # via msrest
-itsdangerous==1.1.0       # via flask
+ipython==7.18.1           # via ipykernel, ipywidgets
+ipywidgets==7.5.1         # via qgrid
 jedi==0.17.2              # via ipython
-jinja2==2.11.2            # via flask, nbconvert, notebook, pandas-profiling, pyldavis
-jmespath==0.10.0          # via boto3, botocore
-joblib==0.16.0            # via combo, imbalanced-learn, kmodes, mlxtend, nltk, pandas-profiling, phik, pycaret, pyldavis, pyod, scikit-learn, suod
+jinja2==2.11.2            # via nbconvert, notebook
+joblib==0.16.0            # via scikit-learn
 jsonschema==3.2.0         # via nbformat
 jupyter-client==6.1.7     # via ipykernel, nbclient, notebook
 jupyter-core==4.6.3       # via jupyter-client, nbconvert, nbformat, notebook
-jupyterlab-pygments==0.1.1  # via nbconvert
+jupyterlab-pygments==0.1.2  # via nbconvert
 kiwisolver==1.2.0         # via matplotlib
-kmodes==0.10.2            # via pycaret
-lightgbm==3.0.0           # via -r requirements.in, pycaret
-llvmlite==0.34.0          # via numba
-mako==1.1.3               # via alembic
-markupsafe==1.1.1         # via jinja2, mako
-matplotlib==3.3.0         # via -r requirements.in, catboost, combo, missingno, mlxtend, pandas-profiling, phik, pycaret, pyod, seaborn, suod, wordcloud, yellowbrick
-missingno==0.4.2          # via pandas-profiling
+lightgbm==3.0.0           # via -r requirements.in
+markupsafe==1.1.1         # via jinja2
+matplotlib==3.3.0         # via -r requirements.in, catboost, seaborn
 mistune==0.8.4            # via nbconvert
-mlflow==1.11.0            # via pycaret
-mlxtend==0.17.3           # via pycaret
-more-itertools==8.5.0     # via pytest
-msrest==0.6.19            # via azure-storage-blob
-murmurhash==1.0.2         # via preshed, spacy, thinc
 nbclient==0.5.0           # via nbconvert
-nbconvert==6.0.4          # via notebook
+nbconvert==6.0.6          # via notebook
 nbformat==5.0.7           # via ipywidgets, nbclient, nbconvert, notebook
-nest-asyncio==1.4.0       # via nbclient
-networkx==2.5             # via visions
-nltk==3.5                 # via pycaret, textblob
+nest-asyncio==1.4.1       # via nbclient
+networkx==2.5             # via hyperopt
 notebook==6.1.4           # via qgrid, widgetsnbextension
-numba==0.51.2             # via combo, phik, pyod, umap-learn
-numexpr==2.7.1            # via pyldavis
-numpy==1.19.2             # via -r requirements.in, blis, catboost, combo, cufflinks, gensim, imagehash, imbalanced-learn, kmodes, lightgbm, matplotlib, missingno, mlflow, mlxtend, numba, numexpr, pandas, pandas-profiling, patsy, phik, pycaret, pyldavis, pyod, pywavelets, scikit-learn, scipy, seaborn, spacy, statsmodels, suod, thinc, umap-learn, visions, wordcloud, xgboost, yellowbrick
-oauthlib==3.1.0           # via requests-oauthlib
-packaging==20.4           # via bleach, pytest
-pandas-profiling==2.9.0   # via pycaret
-pandas==1.1.2             # via -r requirements.in, catboost, cufflinks, mlflow, mlxtend, pandas-profiling, phik, pycaret, pyldavis, pyod, qgrid, seaborn, statsmodels, visions
+numpy==1.19.2             # via -r requirements.in, catboost, category-encoders, hyperopt, lightgbm, matplotlib, pandas, patsy, scikit-learn, scipy, seaborn, statsmodels, xgboost
+packaging==20.4           # via bleach
+pandas==1.1.2             # via -r requirements.in, catboost, category-encoders, qgrid, seaborn, statsmodels
 pandocfilters==1.4.2      # via nbconvert
 parso==0.7.1              # via jedi
-patsy==0.5.1              # via statsmodels
+patsy==0.5.1              # via category-encoders, statsmodels
 pexpect==4.8.0            # via ipython
-phik==0.10.0              # via pandas-profiling
 pickleshare==0.7.5        # via ipython
-pillow==7.2.0             # via imagehash, matplotlib, visions, wordcloud
-plac==1.1.3               # via spacy, thinc
-plotly==4.10.0            # via catboost, cufflinks, pycaret
-pluggy==0.13.1            # via pytest
-preshed==3.0.2            # via spacy, thinc
-prometheus-client==0.8.0  # via notebook, prometheus-flask-exporter
-prometheus-flask-exporter==0.18.0  # via mlflow
+pillow==7.2.0             # via matplotlib
+plotly==4.10.0            # via catboost
+prometheus-client==0.8.0  # via notebook
 prompt-toolkit==3.0.7     # via ipython
-protobuf==3.13.0          # via mlflow
 ptyprocess==0.6.0         # via pexpect, terminado
-py==1.9.0                 # via pytest
-pycaret==2.1.2            # via -r requirements.in
 pycparser==2.20           # via cffi
 pygments==2.7.1           # via ipython, jupyterlab-pygments, nbconvert
-pyldavis==2.1.2           # via pycaret
-pyod==0.8.3               # via combo, pycaret, suod
 pyparsing==2.4.7          # via matplotlib, packaging
 pyrsistent==0.17.3        # via jsonschema
-pytest==6.0.2             # via pyldavis
-python-dateutil==2.8.1    # via alembic, botocore, datefinder, jupyter-client, matplotlib, mlflow, pandas
-python-editor==1.0.4      # via alembic
-pytz==2020.1              # via datefinder, pandas
-pywavelets==1.1.1         # via imagehash
-pyyaml==5.3.1             # via confuse, mlflow
+python-dateutil==2.8.1    # via jupyter-client, matplotlib, pandas
+pytz==2020.1              # via pandas
 pyzmq==19.0.2             # via jupyter-client, notebook
 qgrid==1.3.1              # via -r requirements.in
-querystring-parser==1.2.4  # via mlflow
-regex==2020.7.14          # via datefinder, nltk
-requests-oauthlib==1.3.0  # via msrest
-requests==2.24.0          # via azure-core, databricks-cli, docker, mlflow, msrest, pandas-profiling, requests-oauthlib, smart-open, spacy
 retrying==1.3.3           # via plotly
-s3transfer==0.3.3         # via boto3
-scikit-learn==0.23.2      # via -r requirements.in, combo, imbalanced-learn, kmodes, lightgbm, mlxtend, pycaret, pyod, suod, umap-learn, yellowbrick
-scipy==1.5.2              # via catboost, combo, gensim, imagehash, imbalanced-learn, kmodes, lightgbm, missingno, mlxtend, pandas-profiling, phik, pyldavis, pyod, scikit-learn, seaborn, statsmodels, suod, umap-learn, xgboost, yellowbrick
-seaborn==0.10.1           # via -r requirements.in, missingno, pandas-profiling, pycaret
+scikit-learn==0.23.2      # via -r requirements.in, category-encoders, lightgbm
+scipy==1.5.2              # via catboost, category-encoders, hyperopt, lightgbm, scikit-learn, seaborn, statsmodels, xgboost
+seaborn==0.10.1           # via -r requirements.in
 send2trash==1.5.0         # via notebook
-six==1.15.0               # via argon2-cffi, azure-core, bleach, catboost, cryptography, cufflinks, cycler, databricks-cli, docker, gensim, imagehash, isodate, jsonschema, mlflow, packaging, patsy, plotly, protobuf, pyod, python-dateutil, querystring-parser, retrying, websocket-client
-smart-open==2.1.1         # via gensim
-smmap==3.0.4              # via gitdb
-spacy==2.3.2              # via pycaret
-sqlalchemy==1.3.13        # via alembic, mlflow
-sqlparse==0.3.1           # via mlflow
-srsly==1.0.2              # via spacy, thinc
-statsmodels==0.12.0       # via pyod
-suod==0.0.4               # via pyod
-tabulate==0.8.7           # via databricks-cli
-tangled-up-in-unicode==0.0.6  # via pandas-profiling, visions
+six==1.15.0               # via argon2-cffi, bleach, catboost, cycler, hyperopt, jsonschema, packaging, patsy, plotly, python-dateutil, retrying
+statsmodels==0.12.0       # via category-encoders
 terminado==0.9.1          # via notebook
 testpath==0.4.4           # via nbconvert
-textblob==0.15.3          # via pycaret
-thinc==7.4.1              # via spacy
 threadpoolctl==2.1.0      # via scikit-learn
-toml==0.10.1              # via pytest
 tornado==6.0.4            # via ipykernel, jupyter-client, notebook, terminado
-tqdm==4.49.0              # via -r requirements.in, nltk, pandas-profiling, spacy, thinc
+tqdm==4.50.0              # via -r requirements.in, hyperopt
 traitlets==5.0.4          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbclient, nbconvert, nbformat, notebook
-umap-learn==0.4.6         # via pycaret
-urllib3==1.25.10          # via botocore, requests
-visions[type_image_path]==0.5.0  # via pandas-profiling
-wasabi==0.8.0             # via spacy, thinc
 wcwidth==0.2.5            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
-websocket-client==0.57.0  # via docker
-werkzeug==1.0.1           # via flask
-wheel==0.35.1             # via pyldavis
 widgetsnbextension==3.5.1  # via ipywidgets
-wordcloud==1.8.0          # via pycaret
-xgboost==1.1.1            # via -r requirements.in, pycaret
-yellowbrick==1.1          # via pycaret
-zipp==3.1.0               # via importlib-metadata
+xgboost==1.1.1            # via -r requirements.in
+xlrd==1.2.0               # via -r requirements.in
+zipp==3.2.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
